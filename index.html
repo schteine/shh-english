@@ -27,7 +27,7 @@
         <li><a href="#benefits">Преимущества</a></li>
         <li><a href="#how">Как проходят занятия</a></li>
         <li><a href="#programs">Программы</a></li>
-        <li><a href="#pricing">Стоимость</a></li>
+        <!-- <li><a href="#pricing">Стоимость</a></li> removed: cost integrated into programs -->
         <li><a href="#reviews">Отзывы</a></li>
         <li><a href="#videos">Видео</a></li>
         <li><a href="#faq">FAQ</a></li>
@@ -44,72 +44,29 @@
 
   <!-- Hero section -->
   <section id="home" class="hero">
-    <div class="container hero-content">
-      <!-- Top label describing the format -->
-      <span class="hero-label" data-animate>Онлайн\u2011школа английского</span>
-      <!-- Main headline emphasising the mission -->
-      <h1 data-animate>Английский, который помогает ребёнку открывать мир</h1>
-      <!-- Supporting tagline taken from оригинальный сайт -->
-      <p data-animate>На наших занятиях любовь к языку становится частью более широкого интереса к знаниям, культуре и окружающему миру.</p>
-      <div class="hero-buttons" data-animate>
-        <a href="#contact" class="btn primary">Записаться на урок знакомство</a>
-        <a href="#about" class="btn secondary">О нашем подходе</a>
+    <div class="container hero-container">
+      <div class="hero-text">
+        <!-- Top label describing the format -->
+        <span class="hero-label" data-animate>Онлайн‑школа английского</span>
+        <!-- Main headline emphasising the mission -->
+        <h1 data-animate>Английский, который помогает ребёнку открывать мир</h1>
+        <!-- Supporting tagline taken from оригинальный сайт -->
+        <p data-animate>На наших занятиях любовь к языку становится частью более широкого интереса к знаниям, культуре и окружающему миру.</p>
+        <div class="hero-buttons" data-animate>
+          <a href="#contact" class="btn primary">Записаться на урок знакомство</a>
+          <a href="#about" class="btn secondary">О нашем подходе</a>
+        </div>
+        <!-- Statistics line emphasising small groups and возраст -->
+        <p class="hero-stats" data-animate><strong>2–4 ученика</strong> в мини‑группе, дети 5–14 лет</p>
       </div>
-      <!-- Statistics line emphasising small groups and возраст -->
-      <p class="hero-stats" data-animate><strong>2–4 ученика</strong> в мини‑группе, дети 5–14 лет</p>
-    </div>
-    <div class="hero-decor" aria-hidden="true">
-      <!-- Decorative letters and shapes -->
-      <span class="shape letter a">A</span>
-      <span class="shape letter b">B</span>
-      <span class="shape letter c">C</span>
-      <span class="shape circle"></span>
-      <span class="shape square"></span>
-      <span class="shape triangle"></span>
+      <div class="hero-image" data-animate>
+        <!-- Replace illustration with a real photo of Dasha and её ученики from the original site -->
+        <img src="images/hero-original.jpg" alt="Даша с учениками">
+      </div>
     </div>
   </section>
 
-  <!-- Pricing section -->
-  <section id="pricing" class="section pricing light">
-    <div class="container">
-      <div class="section-title" data-animate>
-        <h2>Стоимость занятий</h2>
-        <p>Выберите оптимальный пакет для вашего ребёнка</p>
-      </div>
-      <div class="pricing-grid">
-        <div class="pricing-card card" data-animate>
-          <h3>Стандарт</h3>
-          <p class="price">1&nbsp;500&nbsp;₽</p>
-          <ul>
-            <li>1 занятие</li>
-            <li>60 минут</li>
-            <li>Индивидуальный формат</li>
-          </ul>
-          <a href="#contact" class="btn primary small">Выбрать</a>
-        </div>
-        <div class="pricing-card card" data-animate>
-          <h3>Оптимальный</h3>
-          <p class="price">10&nbsp;800&nbsp;₽</p>
-          <ul>
-            <li>8 занятий</li>
-            <li>60 минут каждое</li>
-            <li>1&nbsp;350&nbsp;₽ за занятие</li>
-          </ul>
-          <a href="#contact" class="btn primary small">Выбрать</a>
-        </div>
-        <div class="pricing-card card" data-animate>
-          <h3>Интенсив</h3>
-          <p class="price">15&nbsp;600&nbsp;₽</p>
-          <ul>
-            <li>12 занятий</li>
-            <li>60 минут каждое</li>
-            <li>1&nbsp;300&nbsp;₽ за занятие</li>
-          </ul>
-          <a href="#contact" class="btn primary small">Выбрать</a>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Pricing section removed: cost is communicated in program cards -->
 
   <!-- How it Works section -->
   <section id="how" class="section how light">
@@ -159,8 +116,14 @@
           <p><a href="#how" class="btn secondary small">Как проходят занятия</a></p>
         </div>
         <div class="about-illustration">
-          <!-- Empty div for illustration created via CSS shapes -->
-          <div class="illustration"></div>
+          <!-- Gallery of photos from the original site showing Dasha with учениками -->
+          <!-- Main image -->
+          <img src="images/about1.jpg" alt="Даша с учениками" class="about-img main">
+          <!-- Smaller gallery images -->
+          <div class="about-gallery-small">
+            <img src="images/about2.jpg" alt="Даша с учеником" class="about-img small">
+            <img src="images/about3.jpg" alt="Даша на занятии" class="about-img small">
+          </div>
         </div>
       </div>
     </div>

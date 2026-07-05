@@ -20,6 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(el);
   });
 
+  // Prevent browser from restoring scroll position when navigating back/forward or refreshing.
+  if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+  }
+
+  // Always scroll to the top on page load to ensure hero is visible
+  window.scrollTo(0, 0);
+
   // Mobile navigation toggle
   const navToggle = document.getElementById('nav-toggle');
   const navLinks = document.getElementById('nav-links');

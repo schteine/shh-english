@@ -170,15 +170,42 @@ img {
 /* Hero section */
 .hero {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  min-height: 100vh;
+  min-height: 90vh;
   padding-top: 7rem;
   background: linear-gradient(135deg, var(--bg), var(--bg-light));
   position: relative;
   overflow: hidden;
+  text-align: left;
+}
+
+/* Hero container layout */
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hero-text {
+  flex: 1 1 360px;
+  max-width: 600px;
+}
+
+.hero-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-image img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .hero h1 {
@@ -451,21 +478,13 @@ img {
 }
 
 .about-illustration .illustration {
-  width: 100%;
-  height: 250px;
-  background: linear-gradient(45deg, var(--primary), var(--secondary));
-  border-radius: var(--border-radius);
-  position: relative;
-  overflow: hidden;
+  /* Hidden default decorative illustration; replaced by real image */
+  display: none;
 }
 
 .about-illustration .illustration::before,
 .about-illustration .illustration::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-  animation: blob 8s infinite;
+  display: none;
 }
 
 .about-illustration .illustration::before {
@@ -491,6 +510,46 @@ img {
   50% {
     transform: translate(-10px, 10px) scale(1.1);
   }
+}
+
+/* About section illustration image */
+.about-illustration {
+  text-align: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* About illustration gallery styles */
+.about-illustration {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* Main image stays limited in width */
+.about-img.main {
+  max-width: 480px;
+}
+
+/* Container for smaller gallery images */
+.about-gallery-small {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  width: 100%;
+}
+
+/* Small images fill available space */
+.about-gallery-small .about-img.small {
+  max-width: none;
+  width: 100%;
 }
 
 /* Benefits section */
